@@ -18,14 +18,17 @@ const router = new VueRouter({
   routes: [
     {
       path: "/",
+      name: "Home",
       components: require("./containers/Articles.vue")
     },
     {
       path: "/article/:id",
+      name: "Article",
       components: require("./containers/Article.vue")
     },
     {
       path: "/category/:id",
+      name: "Category",
       components: require("./containers/Category.vue")
     }
   ]
